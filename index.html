@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/style_header.css">
+        <link rel="stylesheet" href="./styles/comment_write.css">
+        <link rel="stylesheet" href="./styles/comment_post.css">
+        <link rel="stylesheet" href="./styles/comment_reply.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        <script src="./script/header.js"></script>
+        <script src="./script/write.js"></script>
+        <script src="./script/post.js"></script>
+        <script src="./script/reply.js"></script>
+        <title>Комментарии</title>
+    </head>
+    <body>
+        <hr class="comment-header-line">
+        <header class="comment-header">
+            <div class="comment-header-content">
+                <div class="comment-count">Комментарии (0)</div>
+                <div class="comment-sort">
+                    <label for="sort-select"></label>
+                    <div class="custom-select">
+                        <select id="sort-select">
+                            <option value="date">По дате</option>
+                            <option value="rating">По количеству оценкок</option>
+                            <option value="relevance">По актуальности</option>
+                            <option value="answers">По количеству ответов</option>
+                        </select>
+                </div>
+                </div>
+                <div class="favorite">
+                    <button class="favorite-button">
+                    <p>Избранное</p> 
+                    </button>
+                    <img src="./images/Group 1171274238.svg" alt="favorite-button">
+                </div>
+            </div>
+        </header>
+        <div class="comment-container">
+            <div class="user-avatar"></div>
+            <div class="comment-write">
+                <div class="user-details">
+                    <span class="user-nickname">Никнейм пользователя</span>
+                    <span class="character-limit">Макс. 1000 символов</span>
+                    <span class="character-hint" style="display: none; color: red; margin-left: 20px;">Слишком длинное сообщение</span>
+                </div>
+                <div class="user-text">
+                    <textarea class="comment-input" placeholder="Введите текст сообщения..."></textarea>
+                    <button class="send-button">Отправить</button>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container">
+            <div class="user-avatar"></div>
+            <div class="comment-write">
+                <div class="user-details-post">
+                    <span class="user-nickname">Никнейм пользователя</span>
+                    <span class="comment-time">15.01 13:55</span>
+                </div>
+                    <p class="comment-text">Самое обидное когда сценарий по сути есть - в виде книг, где нет сюжетных дыр, всё логично, 
+                        стройное повествование и достаточно взять и экранизировать оригинал как это было в первых фильмах с минимальным 
+                        количеством отсебятины и зритель с восторгом примет любой такой фильм и сериал, однако вместо этого 
+                        'Кольца власти' просто позаимствовали имена из оригинала, куски истории, мало связанные между собой и выдали 
+                        очередной среднячковый сериал на один раз в лучшем случае.</p>
+                    <div class="comment-actions">
+                        <div class="reply-button">
+                            <button class="reply-btn"><img src="./images/answer btn.svg" width="22" height="22" alt="reply-button"></button>
+                            <button class="reply-text"><p>Ответить</p></button>
+                        </div>                          
+                        <span class="favorite-button">
+                            <button class="favorite-btn"><img src="./images/like.svg" width="24" height="24" alt="favorite-button"></button>
+                            <button class="favorite-text"><p>В избранном</p></button>
+                        </span>
+                        <span class="like-button">
+                            <button id="like-decrease">-</button>
+                            <span id="like-count">0</span>
+                            <button id="like-increase">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comment-container-reply">
+            <div class="user-avatar"></div>
+            <div class="comment-write">
+                <div class="user-details-reply">
+                    <span class="user-nickname">Никнейм пользователя</span>
+                    <span class="reply-button">
+                    <button class="reply-btn"><img class="arrow-reply" src="./images/answer btn.svg" width="22" height="22" alt="reply-button"></button>
+                     <button class="user-nickname-reply"><p>Никнейм пользователя</p></button>
+                    </span>
+                    <span class="comment-time">15.01 15:18</span>
+                </div>
+                    <p class="comment-text-reply">Наверное, самая большая ошибка создателей сериала была в том, что они поставили уж слишком много надежд 
+                        на поддержку фанатов вселенной. Как оказалось на деле, большинство 'фанатов' с самой настоящей яростью и желчью стали 
+                        уничтожать сериал, при этом объективности в отзывах самый минимум.</p>
+                    <div class="comment-actions">
+                        <span class="favorite-button">
+                            <button class="favorite-btn"><img src="./images/heart.svg" width="24" height="24" alt="favorite-button"></button>
+                            <button class="favorite-text"><p>В избранноe</p></button>
+                        </span>
+                        <span class="like-button">
+                            <button id="like-decrease">-</button>
+                            <span id="like-count">0</span>
+                            <button id="like-increase">+</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

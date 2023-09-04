@@ -1,0 +1,124 @@
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.user-avatar {
+    background-image: url("images/Mask\ group.svg");
+    width: 61px;
+    height: 61px;
+    margin-right: 10px;
+}
+  
+.comment-write {
+    width: 80vw;
+}
+  
+.user-nickname {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #122AC0;
+}
+  
+.user-details-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /* Выравнивание по вертикали */
+    margin: 10px 10px;
+    width: 70%;
+}
+
+.comment-time {
+    margin-left: 20px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;  
+}
+  
+.comment-text {
+    margin-bottom: 5px;
+    margin-left: 8px;
+    width: 60vw;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+  
+.reply-button,
+.reply-btn,
+.reply-text,
+.favorite-btn,
+.favorite-text,
+.favorite-button {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    border: none;
+    background: none;
+}
+  
+.like-button {
+    padding: 8px 12px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.reply-button:hover,
+.favorite-button:hover,
+.like-button:hover {
+    background-color: #ffffff;
+}
+  
+#like-decrease {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FF0000;
+    background: #DCDCDC;
+    border-radius: 50%;
+}
+  
+#like-count {
+    font-size: 18px;
+    color: #8AC540;
+}
+  
+#like-increase {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #8AC540;
+    background: #DCDCDC;
+    border-radius: 50%;
+}
